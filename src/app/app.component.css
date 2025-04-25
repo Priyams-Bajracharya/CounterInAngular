@@ -1,0 +1,12 @@
+.btn{
+  height: 50px;
+  width: 100px;
+  border-radius: 50%;
+  border: solid black;
+  margin:20px;
+}
+.Count{
+  padding: 20px;
+  margin: 50px;
+  font-size: 30px;
+}
