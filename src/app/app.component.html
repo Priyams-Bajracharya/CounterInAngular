@@ -9,9 +9,9 @@
 <h1>Counter App</h1>
 <div class="Count">{{count}}</div>
 <div>
-  <button (click)='handleIncrement()'class="btn">Increment</button>
-  <button (click)='handleDecrement()' class="btn">Decrement</button>
-  <button (click)='resetCounter()'class="btn">Reset</button>
+  <button (click)='handleCounter("plus")'class="btn">Increment</button>
+  <button (click)='handleCounter("minus")' class="btn">Decrement</button>
+  <button (click)='handleCounter("reset")'class="btn">Reset</button>
 </div>
 
 </body>
