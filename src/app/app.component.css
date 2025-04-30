@@ -1,12 +1,23 @@
-.btn{
-  height: 50px;
-  width: 100px;
-  border-radius: 50%;
-  border: solid black;
-  margin:20px;
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* Logo left, links right */
+  align-items: center;
+  padding: 1rem 2rem;  /* Spacing inside navbar */
+  background: #f8f9fa;  /* Light gray background */
+  border-bottom: 1px solid #ddd;
 }
-.Count{
-  padding: 20px;
-  margin: 50px;
-  font-size: 30px;
+.navbar img {
+  width: 40px;       /* Increased width */
+  height: 40px;      /* Increased height */
+  object-fit: contain; /* Prevents distortion */
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background: #e9ecef;;
 }

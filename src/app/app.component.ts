@@ -1,25 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { TodoComponent } from './todo/todo.component';
+import { PostListComponent } from "./post-list/post-list.component";
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CounterComponent } from './counter/counter.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, HttpClientModule, TodoComponent, PostListComponent,CounterComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'first-ng-app';
-  count = 0;
   
-  handleCounter(val:string){
-    if(val == 'plus'){
-      this.count++;
-    }
-    else if (val=='minus'&& this.count > 0){
-      this.count--;
-    }
-    else if (val == 'reset'){
-      this.count=0;
-    }
-  }
 }

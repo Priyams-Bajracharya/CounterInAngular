@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counter App</title>
+  <title>Angular App Lets Go!!</title> 
 </head>
 <body>
-<h1>Counter App</h1>
-<div class="Count">{{count}}</div>
-<div>
-  <button (click)='handleCounter("plus")'class="btn">Increment</button>
-  <button (click)='handleCounter("minus")' class="btn">Decrement</button>
-  <button (click)='handleCounter("reset")'class="btn">Reset</button>
-</div>
+  <nav class="navbar">
+    <!-- Optional Logo -->
+    <div class="logo"><img src="assets/icons/logo.png" alt="Logo">
+    </div>
+    
+    <!-- Router Links -->
+    <div class="nav-links">
+      <a routerLink="/counter" routerLinkActive="active">Counter</a>
+      <a routerLink="/todo" routerLinkActive="active">Todo</a>
+      <a routerLink="/posts" routerLinkActive="active">PostList</a>
+    </div>
+  </nav>
+<router-outlet></router-outlet>
 
 </body>
 </html>
